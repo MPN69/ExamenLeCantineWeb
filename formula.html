@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="maquetacionCss/css/estilos.css">
+    <title>Formula general</title>
+</head>
+<body>
+    <h1 id="Titulo">HTML y JS</h1>
+    <p>
+        Calculadora
+    </p>
+    <input id="num1" placeholder="Ingrese a"><br>
+    <input id="num2" placeholder="Ingrese b"><br>
+    <input id="num3" placeholder="Ingrese c"><br>
+    <button type="button" onclick="myfunction()">Sumar</button>
+    
+    <script>
+        function myfunction() {
+            var resultado,text;
+            //Tomar los valoresd del formulario desde los ID de cada etiqueta
+            var a = document.getElementById("num1").value;;
+            var b = document.getElementById("num2").value;;
+            var c = document.getElementById("num3").value;;
+            //Validación de campos
+            if(isNaN(a)||isNaN(b)||isNaN(c)){
+                alert("Es necesario introducir números");
+            }else{
+                var solucion1 = parseFloat((((-1)*b) -(Math.sqrt((Math.pow(b,2) - (4*a*c)))))/(2*a));
+                var solucion2 = parseFloat((((-1)*b) +(Math.sqrt((Math.pow(b,2) - (4*a*c)))))/(2*a));
+                alert("x1: " + solucion1);
+                alert("x2: " + solucion2);
+            }
+            
+        }
+    </script>
+</body>
+</html>

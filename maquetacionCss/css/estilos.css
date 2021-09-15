@@ -1,0 +1,16 @@
+*{
+    background: rgba(255, 0, 255, 0.61);
+    text-align: center;
+}
+h1{
+    color: rgb(255, 255, 255);
+}
+p{
+    color: rgba(66, 4, 66, 0.993);
+    text-align: center,justify;
+}
+input{
+    border-color: black;
+    color: whitesmoke;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
